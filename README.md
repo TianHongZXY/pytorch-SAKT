@@ -1,0 +1,2 @@
+# SAKT
+The implementation is based on Pytorch, there may be a little bugs in it because I modified the SAKT model to run my own dataset, though I reset my code to make it the same as SAKT paper, but I am not sure if there is any bugs in if and I didn't run it on any other dataset, so my implementation is  for reference only.
