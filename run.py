@@ -41,7 +41,7 @@ def run_epoch(m, dataloader, optimizer, scheduler, criterion, num_skills,
                 for j in range(problems.size(1)):
                     target_index.append((offset + helper[i * problems.size(1) + j + 1]))
                     offset += num_skills
-            logits = m(x, problems, target_index, correctness)
+            logits = m(x, problems, target_index)
             pred = torch.sigmoid(logits)
             loss = criterion(pred, correctness.cuda())
             optimizer.zero_grad()
@@ -73,7 +73,7 @@ def run_epoch(m, dataloader, optimizer, scheduler, criterion, num_skills,
                         target_index.append((offset + helper[i * problems.size(1) + j]))
                         offset += num_skills
 
-                logits = m(x, problems, target_index, correctness)
+                logits = m(x, problems, target_index)
                 pred = torch.sigmoid(logits)
                 for J in range(x.size(0)):
                     actual_num_problem = actual_num_problems[J]
