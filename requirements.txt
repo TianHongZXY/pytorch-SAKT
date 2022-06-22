@@ -1,7 +1,7 @@
 coloredlogs==14.0
 humanfriendly==7.1.1
 joblib==0.14.1
-numpy==1.18.1
+numpy==1.22.0
 prefetch-generator==1.0.1
 protobuf==3.11.3
 PySnooper==0.3.0
