@@ -1,6 +1,6 @@
 coloredlogs==14.0
 humanfriendly==7.1.1
-joblib==0.14.1
+joblib==1.2.0
 numpy==1.18.1
 prefetch-generator==1.0.1
 protobuf==3.11.3
