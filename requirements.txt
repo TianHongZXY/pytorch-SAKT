@@ -10,5 +10,5 @@ scipy==1.4.1
 six==1.14.0
 sklearn==0.0
 tensorboardX==2.0
-torch==1.4.0
+torch==1.13.1
 TorchSnooper==0.8
